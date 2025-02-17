@@ -1,0 +1,12 @@
+server:
+  port: 6001
+  servlet:
+    context-path : /
+
+websocket:
+  host: 192.168.0.55
+  port: 10400
+  # 用于测试的音频文件路径,程序对用于测试的音频文件的格式有要求,具体请查看README.md文档里的说明
+  audio-file_path: E:/gitcode_spaces/vosk-client/传承红色基因_8k.wav
+  # 超过10秒未收到服务端的消息, 则自动关闭链接(单位:毫秒)
+  auto-close-connection-timeout-if-no-any-messages: 10000
